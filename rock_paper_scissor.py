@@ -1,3 +1,4 @@
+#This is a simple rock paper scissor game with program where the user enters the three option and the computer picks a random three value
 import random # used to get random values
 
 while True:
