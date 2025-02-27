@@ -9,7 +9,6 @@ while True:
     while player not in choices :
         player = input("enter rock, paper, scissor: ").lower()
 
-
     print("computer picks "+computer)
     print("player picks "+player)
     if computer == player:
