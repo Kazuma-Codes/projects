@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Top Songs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Top 10 Songs</h1>
+
+        <form method="POST">
+            <input type="text" name="artist_name" placeholder="Enter Artist Name" required>
+            <button type="submit">Search</button>
+        </form>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        {% if songs %}
+            <h2>Top 10 Songs for {{ artist_name }}</h2>
+            <ol class="song-list">
+                {% for song in songs %}
+                    <li>
+                        <strong>{{ song['name'] }}</strong> 
+                        <a href="{{ song['external_urls']['spotify'] }}" target="_blank">Listen</a>
+                    </li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+    </div>
+</body>
+</html>

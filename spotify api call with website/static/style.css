@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(135deg, #1db954, #191414);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+.container {
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #1db954;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #17a94d;
+}
+
+.error {
+    color: #ff4c4c;
+    margin-top: 15px;
+}
+
+.song-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.song-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.song-list a {
+    margin-left: 10px;
+    color: #1db954;
+    text-decoration: none;
+}
+
+.song-list a:hover {
+    text-decoration: underline;
+}
